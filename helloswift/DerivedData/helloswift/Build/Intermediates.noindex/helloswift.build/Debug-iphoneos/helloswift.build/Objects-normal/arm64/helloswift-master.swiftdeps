@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
-options: "1fe2c03db0f45cdd7b21d3efb19cd0cc"
-build_time: [1531547586, 727909000]
-inputs:
-  "/Users/Y-Irei/Desktop/helloswift/helloswift/ViewController.swift": [1531195924, 0]
-  "/Users/Y-Irei/Desktop/helloswift/helloswift/AppDelegate.swift": [1531195494, 0]
