@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_pattern" translatesAutoresizingMaskIntoConstraints="NO" id="x7U-ib-Kq8">
+                                <rect key="frame" x="-4" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUV-hX-JH4">
+                                <rect key="frame" x="32.5" y="178.5" width="150" height="150"/>
+                                <state key="normal" image="cymbal"/>
+                                <connections>
+                                    <action selector="cymbal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8H-Hn-708"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-6m-6GU">
+                                <rect key="frame" x="192.5" y="178.5" width="150" height="150"/>
+                                <state key="normal" image="guitar"/>
+                                <connections>
+                                    <action selector="guitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Su1-e8-8yG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-rC-Ver">
+                                <rect key="frame" x="80.5" y="389.5" width="54" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4w-WT-pKy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd9-fa-9TC">
+                                <rect key="frame" x="238" y="389.5" width="57" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azQ-Tg-KIL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jUg-rC-Ver" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="3Me-pg-TlX"/>
+                            <constraint firstItem="Cor-6m-6GU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="6BV-sO-chs"/>
+                            <constraint firstItem="x7U-ib-Kq8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9ln-1A-81p"/>
+                            <constraint firstItem="x7U-ib-Kq8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gqp-sy-X3C"/>
+                            <constraint firstItem="ZUV-hX-JH4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="S5C-pK-K2Q"/>
+                            <constraint firstItem="x7U-ib-Kq8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TV5-2W-oKo"/>
+                            <constraint firstItem="Bd9-fa-9TC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="Zme-so-ZYM"/>
+                            <constraint firstItem="ZUV-hX-JH4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="b39-LI-BX8"/>
+                            <constraint firstItem="Bd9-fa-9TC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="idB-5T-yAT"/>
+                            <constraint firstItem="x7U-ib-Kq8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ig2-i6-6Fv"/>
+                            <constraint firstItem="Cor-6m-6GU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="shK-m2-O2h"/>
+                            <constraint firstItem="jUg-rC-Ver" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="vPK-JB-7or"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_pattern" width="1334" height="1334"/>
+        <image name="cymbal" width="150" height="150"/>
+        <image name="guitar" width="150" height="150"/>
+    </resources>
+</document>
