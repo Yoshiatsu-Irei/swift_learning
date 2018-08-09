@@ -57,7 +57,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate,UIImageP
         
     }
     
- /*   @IBAction func SNSButtonAction(_ sender: Any) {
+    @IBAction func SNSButtonAction(_ sender: Any) {
         if let shareImage = pictureImage.image{
             let shareItems = [shareImage]
             let controller = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
@@ -65,19 +65,25 @@ class ViewController: UIViewController , UINavigationControllerDelegate,UIImageP
             
             present(controller, animated: true, completion: nil)
         }
-    }*/
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
         captureImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
         dismiss(animated: true, completion: {
+        
             self.performSegue(withIdentifier: "showEffectView", sender: nil)
         })
     }
     
+    
     var captureImage : UIImage?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
         if let nextViewController = segue.destination as? EffectViewController{
+        
             nextViewController.originalImage = captureImage
         }
     }
