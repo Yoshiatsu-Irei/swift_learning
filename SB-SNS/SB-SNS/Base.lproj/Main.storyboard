@@ -29,6 +29,7 @@
                                             <action selector="showActivityView:" destination="BYZ-38-t0r" id="Wce-ft-gat"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Item" id="pKG-gk-Kz7"/>
                                 </items>
                             </toolbar>
                         </subviews>

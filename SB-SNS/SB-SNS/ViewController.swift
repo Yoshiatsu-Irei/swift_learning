@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     
     @IBAction func showActivityView(_ sender: UIBarButtonItem) {
         let controller = UIActivityViewController(activityItems: [imageView.image!], applicationActivities: nil)
-        self.present(controller, animated: true, completion: nil)
+       
+        self.present(controller, animated: false, completion: {print("表示完了")})
     }
 }
 
