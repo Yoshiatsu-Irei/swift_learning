@@ -13,40 +13,39 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SB_SNS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SB_Camera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="QLr-Zx-7Jv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mtk-1o-f4j">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n50-VX-ih3">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agj-Lk-ViV">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="action" id="2JV-hW-6Du">
+                                    <barButtonItem systemItem="camera" id="bmi-Uj-wDH">
                                         <connections>
-                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="Wce-ft-gat"/>
+                                            <action selector="launchCamera:" destination="BYZ-38-t0r" id="g3z-vf-h1a"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" id="pKG-gk-Kz7"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n50-VX-ih3" firstAttribute="bottom" secondItem="QLr-Zx-7Jv" secondAttribute="bottom" id="CiE-ai-uBp"/>
-                            <constraint firstItem="QLr-Zx-7Jv" firstAttribute="leading" secondItem="n50-VX-ih3" secondAttribute="leading" id="Izc-HF-5Zr"/>
-                            <constraint firstItem="n50-VX-ih3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LMW-hM-0lt"/>
-                            <constraint firstAttribute="trailing" secondItem="QLr-Zx-7Jv" secondAttribute="trailing" id="Ow4-Yv-a9g"/>
-                            <constraint firstItem="QLr-Zx-7Jv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PWn-UI-2D0"/>
-                            <constraint firstItem="QLr-Zx-7Jv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U3M-g8-0cw"/>
-                            <constraint firstItem="QLr-Zx-7Jv" firstAttribute="trailing" secondItem="n50-VX-ih3" secondAttribute="trailing" id="poG-h0-ngh"/>
+                            <constraint firstItem="mtk-1o-f4j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5al-hT-Ol7"/>
+                            <constraint firstItem="mtk-1o-f4j" firstAttribute="trailing" secondItem="agj-Lk-ViV" secondAttribute="trailing" id="7IV-xA-NUg"/>
+                            <constraint firstItem="mtk-1o-f4j" firstAttribute="bottom" secondItem="agj-Lk-ViV" secondAttribute="bottom" id="Tez-VP-BXd"/>
+                            <constraint firstItem="mtk-1o-f4j" firstAttribute="leading" secondItem="agj-Lk-ViV" secondAttribute="leading" id="Z0A-6t-KPD"/>
+                            <constraint firstItem="agj-Lk-ViV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dk0-Ab-GBV"/>
+                            <constraint firstAttribute="trailing" secondItem="mtk-1o-f4j" secondAttribute="trailing" id="kN4-3q-GYP"/>
+                            <constraint firstItem="mtk-1o-f4j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yoK-jU-DtJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="QLr-Zx-7Jv" id="dhl-hf-amo"/>
+                        <outlet property="imegeView" destination="mtk-1o-f4j" id="OkI-yT-Cvi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -54,7 +53,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Image" width="682" height="1021"/>
-    </resources>
 </document>
