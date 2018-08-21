@@ -13,6 +13,8 @@
 		15348FC1212AA3C700051818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15348FBF212AA3C700051818 /* LaunchScreen.storyboard */; };
 		15348FC9212AA43B00051818 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15348FC8212AA43B00051818 /* ListViewController.swift */; };
 		15348FCB212AAF0200051818 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15348FCA212AAF0200051818 /* Item.swift */; };
+		15348FCE212BB17E00051818 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15348FCD212BB17E00051818 /* WebKit.framework */; };
+		15348FD8212BB5CB00051818 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15348FD7212BB5CB00051818 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		15348FC2212AA3C700051818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15348FC8212AA43B00051818 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		15348FCA212AAF0200051818 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		15348FCD212BB17E00051818 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		15348FD7212BB5CB00051818 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15348FCE212BB17E00051818 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				15348FB5212AA3C600051818 /* SB-NewsReader */,
 				15348FB4212AA3C600051818 /* Products */,
+				15348FCC212BB17D00051818 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +64,7 @@
 			children = (
 				15348FB6212AA3C600051818 /* AppDelegate.swift */,
 				15348FBA212AA3C600051818 /* Main.storyboard */,
+				15348FD7212BB5CB00051818 /* DetailViewController.swift */,
 				15348FC8212AA43B00051818 /* ListViewController.swift */,
 				15348FCA212AAF0200051818 /* Item.swift */,
 				15348FBD212AA3C700051818 /* Assets.xcassets */,
@@ -65,6 +72,14 @@
 				15348FC2212AA3C700051818 /* Info.plist */,
 			);
 			path = "SB-NewsReader";
+			sourceTree = "<group>";
+		};
+		15348FCC212BB17D00051818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15348FCD212BB17E00051818 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 				15348FC9212AA43B00051818 /* ListViewController.swift in Sources */,
 				15348FCB212AAF0200051818 /* Item.swift in Sources */,
 				15348FB7212AA3C600051818 /* AppDelegate.swift in Sources */,
+				15348FD8212BB5CB00051818 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
